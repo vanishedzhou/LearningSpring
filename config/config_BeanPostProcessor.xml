@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ 
+	<bean name="product" class="com.zzy.springtest.Product" scope="prototype"
+		init-method="init" destroy-method="destroy">
+		<constructor-arg name="name" value="prod1"></constructor-arg>
+		<constructor-arg name="price" value="102"></constructor-arg>
+		<constructor-arg name="nums" value="12"></constructor-arg>
+	</bean> 
+	
+	<bean name="initBeanPostProcessor" class="com.zzy.beanPostProcessor.InitBeanPostProcessor"></bean>
+</beans>
