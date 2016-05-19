@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ 
+	<!-- <bean id="room" class="com.zzy.beanAutowire.Room" autowire="byName">  -->
+	<!-- <bean id="room" class="com.zzy.beanAutowire.Room" autowire="byType">  -->
+	<bean id="room" class="com.zzy.beanAutowire.Room" autowire="constructor">
+		<!-- <property name="name" value="room01"> </property>  -->	
+		<constructor-arg value="room02"></constructor-arg>
+	</bean> 
+	
+	<bean id="desk" class="com.zzy.beanAutowire.Desk">
+		<property name="name" value="desk01"></property>
+	</bean>
+	
+</beans>
