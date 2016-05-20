@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/context/spring-context-3.0.xsd">
         
         
-    <context:annotation-config/> 
+    <context:annotation-config/>
  
 	<bean id="student" class="com.zzy.beanAnnotationConfig.Student">
 		<property name="name" value="zhou"> </property> 

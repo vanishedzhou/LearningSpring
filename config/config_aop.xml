@@ -9,7 +9,8 @@
     
     <aop:config>
     	<aop:aspect id="log" ref="logging">
-    		<aop:pointcut expression="execution(* com.zzy.aop.*.*(..))" id="selectAll"/>
+    		<!--  <aop:pointcut expression="execution(* com.zzy.aop.*.*(..))" id="selectAll"/> -->
+    		<aop:pointcut expression="execution(* com.zzy.aop.Student.getName(..))" id="selectAll"/>
     		
     		<aop:before pointcut-ref="selectAll" method="beforeAdvice"/>
     		<aop:after pointcut-ref="selectAll" method="afterAdvice"/>
@@ -26,6 +27,7 @@
     <bean id="stu" class="com.zzy.aop.Student">
     	<property name="name" value="zhou"></property>
     </bean>
+
     <bean id="logging" class="com.zzy.aop.Logging"></bean>
     
 </beans>

@@ -1,4 +1,4 @@
-package com.zzy.aop;
+package com.zzy.aopAnnotation;
 
 public class Student {
 	private String name;
