@@ -51,6 +51,12 @@
         <version>1.8.5</version>
     </dependency>
     
+    <dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>5.1.30</version>
+	</dependency>
+    
   </dependencies>
   <build>
     <finalName>LearningSpring</finalName>
